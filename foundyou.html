@@ -8,13 +8,25 @@
 
 <body>
 <!--Found You Letters-->
-<h1 class="found-you">Found You!</h1>
+<h1 class="found-you">Aha, Found You!</h1>
 
 <!--Search Bar-->
 <div class="search_bar">
+    <form action="/search" method="get">
+    <button type="submit" class="glass_button">
     <img src="./search-bar/magnifying glass.png" alt="">
+    </button>
+    </form>
+
+    <form action="/search" method="get">
+    <button type="submit" class="microphone_button">
     <img src="./search-bar/microphone.png" alt="">
-    <input class="search_input" placeholder="Search...">
+    </button>
+    </form>
+
+    <form action="/search" method="get">
+    <input type="search" class="search_input" name="q" placeholder="Search...">
+    </form>
 </div>
 
 </body>

@@ -3,9 +3,9 @@
     text-align: center;
     font-family: Times;
     font-weight: bold;
-    letter-spacing: -5;
+    letter-spacing: -5px;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
@@ -29,7 +29,7 @@
      background-size: 400% auto;
 
       /* 4. animate the background "position" */
-      animation: moveGradient 20s linear infinite;
+      animation: moveGradient 10s linear infinite;
     }
 
      /* 5. define the movements */
@@ -41,7 +41,7 @@
     .search_bar {
         --padding: 14px;
         
-        width: max-content;
+        width: 900px;
         text-align: center;
         display: flex;
         align-items: center;
@@ -72,4 +72,24 @@
 
     .search_bar img {
         width: 5%;
+    }
+    .glass_button, .microphone_button {
+        background: transparent;
+        border: 1px;
+
+        width: 60px;
+        height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .glass_button img, .microphone_button img {
+        width: 90%;
+        height: 80%;
     }
